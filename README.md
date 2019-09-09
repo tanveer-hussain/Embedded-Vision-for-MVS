@@ -38,6 +38,10 @@ This code is executed over client RPis where a real-time video is captured, anno
 This file takes input image and returns confidence scores and locations of detected objects.
 
 
+Trained model weights can be downloaded from given link as follows:
+- https://drive.google.com/open?id=1LGjKohjf_TlrVHvEHmbTnpGpehPuAPyT
+
+
 
 
 Citation
