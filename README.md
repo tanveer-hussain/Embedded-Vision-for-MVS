@@ -17,24 +17,31 @@ Repository Explaination
 ===
 There are total seven Python script files in this repository (Explained alphabetically).
 1. complexity.py
+
 It returns a single flot value which is used in "main_MVS_master_RPi.py" for summary generation.
 
 2. decoding.py
+
 It takes an input image and returns the encoded image.
 
 3. encoding.py
+
 This file has a function which takes encoded image and decodes it into normal RGB format.
 
 4. entropy.py
+
 It computes information inside image and returns a float value. It's input argument is image.
 
 5. main_MVS_master_RPi.py
+
 It receives frames for a certain duration from client RPis, decodes them and computes information by calling entropy and complexity functions and finally writes keyframes.
 
 6. shots_segmentation_client_RPi.py
+
 This code is executed over client RPis where a real-time video is captured, annotated, encoded and transmitted over WSN to master RPi.
 
 7. yolo_main.py
+
 This file takes input image and returns confidence scores and locations of detected objects.
 
 
