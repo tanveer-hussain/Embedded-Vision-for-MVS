@@ -15,8 +15,8 @@ A step-wise tutorial explaining functionality of this code can be found here at 
 
 Repository Explaination
 ===
-There are total five Python script files in this repository (Explained alphabetically).
-1. complexity.py
+There are total seven Python script files in this repository (Explained alphabetically).
+1. #complexity.py
 It returns a single flot value which is used in "main_MVS_master_RPi.py" for summary generation.
 
 2. decoding.py
