@@ -44,18 +44,26 @@ Trained weights for tiny yolo can be downloaded from given link as follows:
 
 ## suspicious-objects-detection
 
-For suspicious object detection we re-trained yolov3-tiny model for our own types of object detection i.e., suspicious objects that include gun, pistols, and knives. For annotating objects, first we downloaded different pictures from Google with several queries and take screenshots from some YouTube videos and movies. The overall training images were only 105 due to no public availability of such kind of dataset. The screenshot for average loss through out training process is given below:
+For custom object detection we re-trained yolov3-tiny model for our own types of object i.e., suspicious ones that include gun, pistols, and knives. For annotating objects, first we downloaded different pictures from Google with several queries and take screenshots from some YouTube videos and movies. The overall training images were only 105 due to no public availability of such kind of dataset. Therefore, the trained model does not work well with every type of images.
+The screenshot for average loss through out training process is given below:
 
 ![tiny-yolo-0 05-loss](https://user-images.githubusercontent.com/40714349/64930457-e49b6400-d86b-11e9-9635-a5dd00e25b24.png)
 
+#### Final training loss is 0.06
 
+##### Some sample results are given below:
 
+![suspicious-results JPG](https://user-images.githubusercontent.com/40714349/64930635-a0a95e80-d86d-11e9-9b85-c5464df75b3a.png)
 
+For trained model please follow the below links:
 
+- https://drive.google.com/open?id=1hBCuJsGl6XhFS-oDGOmpddrZrYYvLGic
+- https://drive.google.com/open?id=1Lpp4zXTuvTEbi0p6heHnjbSD3OiyTLtO
 
 # Citation
 
 If you are interested in Video Summarization domain you may find some of my other recent papers worthy to read:
+
 <pre>
 <code>
 K. Muhammad, T. Hussain, and S. W. Baik, "Efficient CNN based summarization of surveillance videos for resource-constrained devices," Pattern Recognition Letters, 2018/08/07/ 2018
