@@ -43,7 +43,7 @@ Trained weights for tiny yolo can be downloaded from given link as follows:
 - https://pjreddie.com/darknet/yolo/
 
 ## suspicious-objects-detection
-======
+
 For suspicious object detection we re-trained yolov3-tiny model for our own types of object detection i.e., suspicious objects that include gun, pistols, and knives. For annotating objects, first we downloaded different pictures from Google with several queries and take screenshots from some YouTube videos and movies. The overall training images were only 105 due to no public availability of such kind of dataset.
 
 
