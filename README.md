@@ -63,12 +63,9 @@ For trained model please follow the below links:
 # Citation
 <pre>
 <code>
-
 Hussain, T., Muhammad, K., Del Ser, J., Baik, S. W., & de Albuquerque, V. H. C. (2019). Intelligent Embedded Vision for Summarization of Multi-View Videos in IIoT. IEEE Transactions on Industrial Informatics.
-
 </code>
 </pre>
-
 
 If you are interested in Video Summarization domain you may find some of my other recent papers worthy to read:
 
