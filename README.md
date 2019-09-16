@@ -44,7 +44,7 @@ Trained weights for tiny yolo can be downloaded from given link as follows:
 
 ## suspicious-objects-detection
 
-For custom object detection we re-trained yolov3-tiny model for our own types of object i.e., suspicious ones that include gun, pistols, and knives. For annotating objects, first we downloaded different pictures from Google with several queries and take screenshots from some YouTube videos and movies. The overall training images were only 105 due to no public availability of such kind of dataset. Therefore, the trained model does not work well with every type of images.
+For custom object detection we retrained yolov3-tiny model for our own types of object i.e., suspicious ones that include gun, pistols, and knives. For annotating objects, first we downloaded different pictures from Google with several queries and take screenshots from some YouTube videos and movies. The overall training images were only 105 due to no public availability of such kind of dataset. Therefore, the trained model does not work well with every type of images.
 The screenshot for average loss through out training process is given below:
 
 ![tiny-yolo-0 05-loss](https://user-images.githubusercontent.com/40714349/64930457-e49b6400-d86b-11e9-9635-a5dd00e25b24.png)
