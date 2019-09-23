@@ -39,7 +39,7 @@ This file takes input image and returns confidence scores and locations of detec
 
 ## Models
 
-Trained weights for tiny yolo can be downloaded from given link as follows:
+Trained weights for tiny yolo can be downloaded from given link:
 - https://pjreddie.com/darknet/yolo/
 
 ## suspicious-objects-detection
