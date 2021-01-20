@@ -67,6 +67,9 @@ For trained model please follow the below links:
 - https://drive.google.com/open?id=1hBCuJsGl6XhFS-oDGOmpddrZrYYvLGic
 - https://drive.google.com/open?id=1Lpp4zXTuvTEbi0p6heHnjbSD3OiyTLtO
 
+Contact Me
+========
+If you feel any difficulty or errors, please refer to tanveerkhattak37973[at][gmail]
 
 ## Outsourcing and Licensing
 <license>
