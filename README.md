@@ -101,7 +101,16 @@ OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
 # Citation
 <pre>
 <code>
-Hussain, T., Muhammad, K., Del Ser, J., Baik, S. W., & de Albuquerque, V. H. C. (2019). Intelligent Embedded Vision for Summarization of Multi-View Videos in IIoT. IEEE Transactions on Industrial Informatics.
+@article{hussain2019intelligent,
+  title={Intelligent Embedded Vision for Summarization of Multiview Videos in IIoT},
+  author={Hussain, Tanveer and Muhammad, Khan and Del Ser, Javier and Baik, Sung Wook and de Albuquerque, Victor Hugo C},
+  journal={IEEE Transactions on Industrial Informatics},
+  volume={16},
+  number={4},
+  pages={2592--2602},
+  year={2019},
+  publisher={IEEE}
+}
 </code>
 </pre>
 
