@@ -198,9 +198,9 @@ def main():
         (status_i, frame) = capture.read()
         frame = cv2.resize(frame, (224, 224))
         frames_count += 1
-        cv2.imwrite('Test/Frame-'+ str(frames_count) + '.png', frame)
-        cv2.imshow(' ', frame)
-        cv2.waitKey(1)
+        # cv2.imwrite('Test/Frame-'+ str(frames_count) + '.png', frame)
+        # cv2.imshow(' ', frame)
+        # cv2.waitKey(1)
         
 
         (annotated_frame, confidences, class_ids) = tinu(frame)
