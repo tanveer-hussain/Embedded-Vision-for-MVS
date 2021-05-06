@@ -193,48 +193,52 @@ def main():
     frame_writing_count = 0
     largestvalue = 0
     frames_count = 0
+    sending_flag = 0
 
     while True:
         (status_i, frame) = capture.read()
         frame = cv2.resize(frame, (224, 224))
         frames_count += 1
+        sending_flag = sending_flag + 1
         # cv2.imwrite('Test/Frame-'+ str(frames_count) + '.png', frame)
         # cv2.imshow(' ', frame)
         # cv2.waitKey(1)
         
 
-        (annotated_frame, confidences, class_ids) = tinu(frame)
+        if sending_flag >= 30:
+            sending_flag = 0
+            (annotated_frame, confidences, class_ids) = tinu(frame)
 
-        if len(confidences) is not 0:
-            if any([x > 0.7 for x in confidences]):
-                persons = class_ids.count(0)
-                print ('persons = ', persons)
+            if len(confidences) is not 0:
+                if any([x > 0.7 for x in confidences]):
+                    persons = class_ids.count(0)
+                    print ('persons = ', persons)
 
-                if persons >= 1:
+                    if persons >= 1:
 
-                    entropy_value = entropy_main(frame)
-                    complexity_value = complexity_main(frame)
-                    #print ('entropy_value = ', entropy_value)
-                    #print ('complexity_value = ', complexity_value)
-                    temp_sum = entropy_value + complexity_value
+                        entropy_value = entropy_main(frame)
+                        complexity_value = complexity_main(frame)
+                        #print ('entropy_value = ', entropy_value)
+                        #print ('complexity_value = ', complexity_value)
+                        temp_sum = entropy_value + complexity_value
 
-                    information_sum.append(temp_sum)
-                    temp_images.append(frame)
-                    frame_writing_count += 1
-                    #print ('frame_writing_count =', frame_writing_count)
+                        information_sum.append(temp_sum)
+                        temp_images.append(frame)
+                        frame_writing_count += 1
+                        #print ('frame_writing_count =', frame_writing_count)
 
-                    if frame_writing_count >= 10:
-                        frame_writing_count = 0
-                        for (i, item) in enumerate(information_sum):
-                            if item > largestvalue:
-                                largestvalue = item
-                                #print (' i = ' + str(i) + '   ### item = ' + str(item))
-                                max_index1 = i
-                                print (' max index = ' , max_index1)
-                        path = 'Keyframes' + '/Keyframe-' + str(frames_count) + '.png'
-                        cv2.imwrite(path, temp_images[max_index1])
-                        temp_images = []
-                        information_sum = []
+                        if frame_writing_count >= 10:
+                            frame_writing_count = 0
+                            for (i, item) in enumerate(information_sum):
+                                if item > largestvalue:
+                                    largestvalue = item
+                                    #print (' i = ' + str(i) + '   ### item = ' + str(item))
+                                    max_index1 = i
+                                    print (' max index = ' , max_index1)
+                            path = 'Keyframes' + '/Keyframe-' + str(frames_count) + '.png'
+                            cv2.imwrite(path, temp_images[max_index1])
+                            temp_images = []
+                            information_sum = []
 
 
         
