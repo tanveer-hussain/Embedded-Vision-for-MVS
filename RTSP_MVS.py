@@ -239,6 +239,7 @@ def main():
                             cv2.imwrite(path, temp_images[max_index1])
                             temp_images = []
                             information_sum = []
+                            largestvalue = 0
 
 
         
